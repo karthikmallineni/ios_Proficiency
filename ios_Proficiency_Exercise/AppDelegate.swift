@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  ios_Proficiency_Exercise
 //
-//  Created by Karthik on 03/08/20.
+//  Created by Karthik on 01/08/20.
 //  Copyright © 2020 Administrator. All rights reserved.
 //
 
@@ -15,6 +15,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        let viewController = ViewController()
+        window?.rootViewController = UINavigationController(rootViewController: viewController)
+        window?.makeKeyAndVisible()
         // Override point for customization after application launch.
         return true
     }
